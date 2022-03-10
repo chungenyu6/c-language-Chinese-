@@ -8,6 +8,7 @@ belongs to the original author(professor). I only offer the code solutions, and 
 all for education purpose, but if there are any issues with the authorization, please contact me, 
 I will immediately remove it.
 
+- All the comments in the code and the problem statement (named `ProblemStatement.md`) was written in Mandarin.
 
 ## Usage
 
