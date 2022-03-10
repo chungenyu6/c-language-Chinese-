@@ -138,7 +138,8 @@
 
 ## Code
 Data.h   
-![image](https://user-images.githubusercontent.com/80203709/157580843-0b58616b-49d1-4837-8e69-935648dd9e20.png)
+![image](https://user-images.githubusercontent.com/80203709/157581203-1e065ad1-c972-4220-8663-7e035020718e.png)
+
 
 Main.c   
 
@@ -174,7 +175,7 @@ Conversation.c (以平民對話為例)
 ![image](https://user-images.githubusercontent.com/80203709/157581017-ebf361f0-860b-43f3-aaa4-23b728b2b5ef.png)
 
 Battle.c   
-![image](https://user-images.githubusercontent.com/80203709/157581022-97460bd4-1c8d-4c12-bc80-92911397f039.png)
+![image](https://user-images.githubusercontent.com/80203709/157581153-f6968324-2182-4df4-bd71-294d6ca39411.png)
 ![image](https://user-images.githubusercontent.com/80203709/157581036-2bf682c3-8696-4848-8db4-4003bafe7962.png)
 
 
