@@ -1,0 +1,169 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <ctype.h>
+#include <string.h>
+#include "data.h"
+
+    //ally
+    DATA man={"郭靖", "\n為人憨厚老實重情重義，受各路中人的看好的有為青年，並且內力深厚。\n\n絕技: <<降龍十八掌>>\t武器: <<無>>", 800, 600, 300, 500, 100};
+    DATA woman={"黃容", "\n美貌冠絕天下且聰明絕頂，性格古靈精怪。\n\n絕技: <<落英神劍掌>>\t武器: <<舊。打狗棒>>", 800, 300, 500, 400, 100};
+    DATA east={"黃藥師", " ", 2000, 500, 12000, 2000, 1000};
+    DATA dou={"全真教道士", " ", 1000, 100, 100, 250, 100};
+    DATA north={"洪七公", " ", 2000, 1000, 0, 2000, 1000};
+    DATA middle={"周伯通", " ", 2000, 200, 500, 1500, 0};
+    DATA beggar={"丐幫兄弟", " ", 1000, 100, 0, 200, 50};
+    DATA masterdou={"丘真人", " ", 2000, 1000, 12000, 2000, 1000};
+    DATA ally={"隱居大俠", " ", 2000, 500, 12000, 2000, 1000};
+    //bad guys
+    DATA boss={"楊康", " ", 2000, 10000, 20000, 900, 0};
+    DATA badguy={"邪教教徒", " ", 1000, 300, 700, 200, 0};
+    DATA west={"歐陽鋒", " ", 1500, 600, 300, 1500, 0};
+    DATA virgin={"李莫愁", " ", 1200, 400, 1000, 700, 0};
+    //civilians
+    DATA civilian={"平民", " ", 500, 200, 500, 100, 0};
+    DATA weaponseller={"武器店老闆", " ", 500, 1000, 10000, 200, 0};
+    //items
+    DATA red_envolope={"冥 婚 紅 包", " ", 200, 0, 300, 100, 100};
+    DATA paperman={"紙 紮 人", " ", 100, 0, 200, 100, 50};
+    DATA deadbody={"死 屍", " ", 300, 0, 500, 200, 100};
+
+    DATA kongfu={"祕 笈", " " ,200, 0, 0, 200, 50};
+    DATA medi={"仙 丹", " ", 200, 0, 0, 0, 100};
+
+char a[20][50]={};  //map a
+char b[20][50]={};  //map b
+int n=0;    //dice
+int track=0;    //紀錄步數
+
+
+int main()
+{
+    char c, cin/*鍵盤輸入*/;
+    int i, j, main_charac/*紀錄主角*/;
+
+    FILE *ptr;
+    srand(time(NULL));
+
+/*
+    //game instructions
+    printf("請將文字調整成12，並選擇最大化視窗以達到良好的遊戲體驗，如有問題請參照說明書\n\n\n");
+    system("pause");
+    system("CLS");
+
+    //title
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    ptr = fopen("E:\\課業\\1上 程式設計\\Final Project\\Final Project File\\title.txt", "r");
+    while ((c=getc(ptr)) != EOF)
+    {
+        printf("%c", c);
+    }
+    fclose(ptr);
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    system("pause");
+    system("CLS");
+
+    //選角
+    LOOP1: do
+    {
+        system("CLS");
+        printf("請選擇角色(按下): M: 郭靖\tW: 黃容\n\n\n");
+        printf("----------------------------------------------------------------------\n\n\n");
+        display_characters ();
+
+        cin=getch();
+        tolower(cin);
+        system("CLS");
+        if (cin == 109)
+        {
+            print_man();
+            printf("\n\n\n\n返回(請按N)\t\t開始遊戲(請按Y)\n\n");
+            cin=getch();
+            tolower(cin);
+            if (cin == 121)
+            {
+                main_charac = 1;
+                break;
+            }
+            else
+                goto LOOP1;
+        }
+        else if (cin == 119)
+        {
+            print_woman();
+            printf("\n\n\n\n返回(請按N)\t\t開始遊戲(請按Y)\n\n");
+            cin=getch();
+            if (cin >= 0)
+            {
+                system("CLS");
+                printf("請付費以解鎖角色，詳細匯款資訊請來信: 410587031@gmail.com\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                system("pause");
+                goto LOOP1;
+            }
+        }
+    }while (1);
+    system("CLS");
+
+    //intro
+    ptr = fopen("E:\\課業\\1上 程式設計\\Final Project\\Final Project File\\intro.txt", "r");
+    while ((c=getc(ptr)) != EOF)
+    {
+        printf("%c", c);
+    }
+    fclose(ptr);
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    system("pause");
+    system("CLS");
+
+
+    print_temple();
+    printf("\n\n\n");
+    system("pause");
+    system("CLS");
+
+    //intro 2
+    ptr = fopen("E:\\課業\\1上 程式設計\\Final Project\\Final Project File\\intro 2.txt", "r");
+    while ((c=getc(ptr)) != EOF)
+    {
+        printf("%c", c);
+    }
+    fclose(ptr);
+    printf("\n\n\n\n\n");
+    system("pause");
+    system("CLS");
+
+    */
+    //game start
+
+    LOOP_map: do
+    {
+        printf("@: 全真教\t\t\tX: 約定地");
+        track = map(track, n);  //special use
+        printf("track: %d", track);
+        printf("\n\n\n\n\n\n\n<< 按 下 D 擲 骰 子 >>\n\n\n");
+        printf("\n\n\n\n\n%s\t\t生命: %d\t\t名聲: %d\t\t財富: %d\t\t攻擊力: %d\t\t\t回復力: %d", man.name, man.HP, man.repu, man.wealth, man.attack, man.heal);
+        cin=getch();
+        tolower(cin);
+        system("CLS");
+        if (cin == 100)
+        {
+            n = (rand()%10+1);  //n=1~10
+            mission_page (n);
+            printf("%s\t\t生命: %d\t\t名聲: %d\t\t財富: %d\t\t攻擊力: %d\t\t\t回復力: %d\n\n\n\n\n\n\n", man.name, man.HP, man.repu, man.wealth, man.attack, man.heal);
+            system("pause");
+            system("CLS");
+        }
+
+        if (track >= 71)   //boss
+        {
+
+            conversation_boss();
+            goto END;
+        }
+
+
+    }while (1);
+
+    END:
+        print_conti();
+}

@@ -1,0 +1,88 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+    struct data man={"郭靖", "\n為人憨厚老實重情重義，受各路中人的看好的有為青年，並且內力深厚。\n\n絕技: <<降龍十八掌>>\t武器: <<無>>", 800, 600, 300, 500, 250};
+    struct data woman={"黃容", "\n美貌冠絕天下且聰明絕頂，性格古靈精怪。\n\n絕技: <<落英神劍掌>>\t武器: <<舊。打狗棒>>", 800, 300, 500, 400, 200};
+    struct data east={"黃藥師", " ", 2000, 500, 12000, 2000, 1000};
+    struct data dou={"全真教道士", " ", 1000, 100, 100, 250, 100};
+    struct data north={"洪七公", " ", 2000, 1000, 0, 2000, 1000};
+    struct data middle={"周伯通", " ", 2000, 200, 500, 1500, 0};
+    struct data beggar={"丐幫兄弟", " ", 1000, 100, 0, 200, 50};
+    struct data masterdou={"丘真人", " ", 2000, 1000, 12000, 2000, 1000};
+
+    struct data boss={"楊康", " ", 2000, 100, 20000, 900, 0};
+    struct data badguy={"邪教教徒", " ", 1000, 300, 700, 200, 0};
+    struct data west={"歐陽鋒", " ", 1500, 600, 300, 1500, 0};
+    struct data virgin={"李莫愁", " ", 1200, 400, 1000, 700, 0};
+
+    struct data civilian={"平民", " ", 500, 200, 500, 100, 0};
+    struct data weaponseller={"武器店老闆", " ", 500, 300, 10000, 200, 0};
+
+int conversation1()
+{
+    int cin;
+    char c;
+    FILE *ptr;
+
+    print_town();
+    ptr = fopen("E:\\課業\\1上 程式設計\\Final Project\\Final Project File\\村民對話.txt", "r");
+    while ((c=getc(ptr)) != EOF)
+    {
+        printf("%c", c);
+    }
+    fclose(ptr);
+
+    LOOP: do
+    {
+        printf("\n\n\n\n\n\n\n1. 攻擊平民\t2. 幫助平民\t3. 逃跑\n\n\n\n\n");
+        scanf("%d", &cin);
+        if (cin == 1)
+        {
+            print_man();
+        }
+        else if (cin ==2)
+        {
+
+        }
+        else if (cin ==3)
+        {
+            printf("\n\n\n腳踩輕功 - < 踏雪無痕 >，縱身而去...\n\n\n");
+            system("pause");
+            break;
+        }
+    }while (1);
+
+    //return 數值
+}
+
+
+void display_characters ()
+{
+
+    struct data man={"郭靖", "\n為人憨厚老實重情重義，受各路中人的看好的有為青年，並且內力深厚。\n\n絕技: <<降龍十八掌>>\t武器: <<無>>", 1000, 600, 300, 500, 0};
+    struct data woman={"黃容", "\n美貌冠絕天下且聰明絕頂，性格古靈精怪。\n\n絕技: <<落英神劍掌>>\t武器: <<舊。打狗棒>>", 1000, 300, 500, 400, 200};
+
+    //man.weapon++; //才可改變數值
+
+    puts(man.name);
+    printf("\n");
+    puts(man.intro);
+    printf("\n");
+    printf("HP:\t%d\n",man.HP);
+    printf("聲望:\t%d\n",man.repu);
+    printf("財富:\t%d\n",man.wealth);
+    printf("攻擊力:\t%d\n",man.attack);
+    printf("回復力:\t%d\n",man.heal);
+    printf("\n\n\n\n");                         //換人
+    puts(woman.name);
+    printf("\n");
+    puts(woman.intro);
+    printf("\n");
+    printf("HP:\t%d\n",woman.HP);
+    printf("聲望:\t%d\n",woman.repu);
+    printf("財富:\t%d\n",woman.wealth);
+    printf("攻擊力:\t%d\n",woman.attack);
+    printf("回復力:\t%d\n",woman.heal);
+    printf("\n\n\n\n");
+}
+
