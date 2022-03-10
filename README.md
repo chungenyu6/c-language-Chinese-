@@ -1,5 +1,5 @@
 <h1 align="center">
-  Term Project : C Programming Language (Undergrad-level)
+  Term Project : C Programming Language (Basic-level)
 </h1>
 
 ## Notice
