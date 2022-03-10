@@ -9,6 +9,7 @@ all for education purpose, but if there are any issues with the authorization, p
 I will immediately remove it.
 
 - All the comments in the code and the problem statement (named `ProblemStatement.md`) was written in Mandarin.
+- My source code does not satisfy every rules in `ProblemStatement.md`
 
 ## Usage
 
