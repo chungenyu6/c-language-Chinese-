@@ -18,7 +18,7 @@ All codes in this repository are used in C langauge.
 I used [Code::Blocks](https://www.codeblocks.org/) to complete this project.
 
 ### How to use the code?
-Just execute `main.c` in `Project File/final_project/main.c`
+Execute `main.c` in `Project File/final_project/main.c`
 
 
 ## License
