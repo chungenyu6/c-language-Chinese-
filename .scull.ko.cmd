@@ -1,1 +1,0 @@
-cmd_/home/teacher/ORielly-Module-Programming/myScull/scull.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/teacher/ORielly-Module-Programming/myScull/scull.ko /home/teacher/ORielly-Module-Programming/myScull/scull.o /home/teacher/ORielly-Module-Programming/myScull/scull.mod.o ;  true
