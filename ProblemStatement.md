@@ -1,15 +1,5 @@
-# Problem Statement & Rules
+# Problem Statement
 
-## Rules
-- 封面 (Cover)
-- 索引 (Index)
-  1. 簡介 (Introduction)
-  2. 程式規畫 (Program Plan)
-  3. 程式碼及執行結果 (Source Code and Execution)
-  4. 心得及討論 (Discussion)
-  5. 參考資料 (References)
-
-## Problem Statement
 題目一共有七題，全部都是以金庸(查良鏞，1924 年3 月10 日－2018 年10
 月30 日[4]），男，筆名金庸，浙江海寧人，武俠小說泰斗，1948 年移居香
 港。自1950 年代起，其以筆名「金庸」創作多部膾炙人口的武俠小說，包
