@@ -11,13 +11,12 @@ I will immediately remove it.
 - All the comments in the code and the problem statement (named `ProblemStatement.md`) was written in Mandarin.
 - My source code only complete most of the rules (but not all) that states in `ProblemStatement.md`
 
-## Usage
+## Methods
 
 All codes in this repository are used in C langauge.
 
 I used [Code::Blocks](https://www.codeblocks.org/) to complete this project.
 
-### How to use the code?
 Execute `main.c` in `Project File/final_project/main.c`
 
 
